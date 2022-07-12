@@ -253,7 +253,7 @@ queues:
       vertical_align: bottom
     - horizontal_offset: 0
       horizontal_align: right
-      vertical_offset: 660
+      vertical_offset: 460
       vertical_align: bottom
 
 overlays:
