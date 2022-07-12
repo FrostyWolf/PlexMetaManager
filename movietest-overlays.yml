@@ -129,6 +129,7 @@ templates:
     overlay:
       name: <<overlay_name>>
       # git: PMM/overlays/images/<<overlay>>
+      queue: Designation_Queue
       group: logo
       weight: <<weight>>
       horizontal_offset: 0
@@ -143,6 +144,7 @@ templates:
     mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshmovies
     overlay:
       name: <<overlay_name>>
+      queue: Designation_Queue
       group: logo
       weight: <<weight>>
       horizontal_offset: 0
@@ -157,6 +159,7 @@ templates:
     mdblist_list: https://mdblist.com/lists/frostywolf/metacritic-must-see-movies/
     overlay:
       name: <<overlay_name>>
+      queue: Designation_Queue
       group: logo
       weight: <<weight>>
       horizontal_offset: 0
@@ -324,19 +327,16 @@ overlays:
     template:
       - name: IMDbTop250
         weight: 50
-        queue: Designation_Queue
 
   RT-Cert-Freshred:
     template:
       - name: RT-Cert-Fresh
         weight: 40
-        queue: Designation_Queue
 
   MC-Must-See:
     template:
       - name: Meta-Must
         weight: 45
-        queue: Designation_Queue
 
   Oscarred:
     template:
