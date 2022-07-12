@@ -1,0 +1,316 @@
+templates:
+  IMDB_Ratingred:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    overlay:
+      name: IMDB_Ratingred
+      horizontal_offset: 530
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+  Audience_Rating:
+    optional:
+      - overlay_level
+    default:
+      rating_type: audience_rating#
+      horizontal_offset: 679
+      horizontal_align: left
+      vertical_offset: 33
+      vertical_align: bottom
+    collection_level: <<overlay_level>>
+    overlay:
+      name: text(<<rating_type>>)
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: config/fonts/Roboto-Bold.ttf
+      font_size: 60
+      font_color: "#FFFFFF"
+
+  MDB_Rating:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    overlay:
+      name: MDB_Rating
+      horizontal_offset: 10
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+  Critic_Rating:
+    optional:
+      - overlay_level
+    default:
+      rating_type: critic_rating#
+      horizontal_offset: 380
+      horizontal_align: left
+      vertical_offset: 33
+      vertical_align: bottom
+    collection_level: <<overlay_level>>
+    overlay:
+      name: text(<<rating_type>>)
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: config/fonts/Roboto-Bold.ttf
+      font_size: 60
+      font_color: "#FFFFFF"
+
+  RT-Crit-Freshred:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    overlay:
+      name: RT-Crit-Freshred
+      horizontal_offset: 270
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+  RT-Crit-Rottenred:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    overlay:
+      name: RT-Crit-Rottenred
+      horizontal_offset: 270
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+  User_Rating:
+    optional:
+      - overlay_level
+    default:
+      rating_type: user_rating#
+      horizontal_offset: 124
+      horizontal_align: left
+      vertical_offset: 33
+      vertical_align: bottom
+    collection_level: <<overlay_level>>
+    overlay:
+      name: text(<<rating_type>>)
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: config/fonts/Roboto-Bold.ttf
+      font_size: 60
+      font_color: "#FFFFFF"  
+
+  IMDbTop250:
+    default:
+      overlay: <<overlay_name>>
+    imdb_chart: top_<<library_type>>s
+    overlay:
+      name: <<overlay_name>>
+      # git: PMM/overlays/images/<<overlay>>
+      group: logo
+      weight: <<weight>>
+      horizontal_offset: 0
+      horizontal_align: right
+      vertical_offset: 0
+      vertical_align: bottom
+  
+  RT-Cert-Fresh:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshmovies
+    overlay:
+      name: <<overlay_name>>
+      group: logo
+      weight: <<weight>>
+      horizontal_offset: 10
+      horizontal_align: right
+      vertical_offset: 10
+      vertical_align: bottom
+      
+  Meta-Must:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    mdblist_list: https://mdblist.com/lists/frostywolf/metacritic-must-see-movies/
+    overlay:
+      name: <<overlay_name>>
+      group: logo
+      weight: <<weight>>
+      horizontal_offset: 10
+      horizontal_align: right
+      vertical_offset: 10
+      vertical_align: bottom
+
+
+  Oscar:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    imdb_list: 
+    - https://www.imdb.com/search/title/?groups=best_picture_winner
+    - https://www.imdb.com/search/title/?groups=best_director_winner
+    - https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/academy-award-best-cinematography
+    overlay:
+      name: <<overlay_name>>
+      group: award
+      weight: <<weight>>
+      horizontal_offset: 10
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: top
+
+  Cannes:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    trakt_list: 
+    - https://trakt.tv/users/maxwelldeux/lists/cannes-film-festival-palme-d-or
+    - https://trakt.tv/users/maxwelldeux/lists/cannes-film-festival-grand-prix
+    overlay:
+      name: <<overlay_name>>
+      group: award
+      weight: <<weight>>
+      horizontal_offset: 10
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: top
+
+  Venice:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion
+    overlay:
+      name: <<overlay_name>>
+      group: award
+      weight: <<weight>>
+      horizontal_offset: 5
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: top
+
+  Berlin:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
+    overlay:
+      name: <<overlay_name>>
+      group: award
+      weight: <<weight>>
+      horizontal_offset: 5
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: top
+
+  Sundance:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    trakt_list: https://trakt.tv/users/maxwelldeux/lists/sundance-film-festival-grand-jury-prize
+    overlay:
+      name: <<overlay_name>>
+      group: award
+      weight: <<weight>>
+      horizontal_offset: 10
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: top
+
+
+overlays:
+  rating_IMDB:
+    template:
+      - name: IMDB_Ratingred
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+        audience_rating.lte: 10
+  audience_rating:
+    template:
+      name: Audience_Rating
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+        audience_rating.lte: 10
+
+  rating_mdb:
+    template:
+      - name: MDB_Rating
+    plex_search:
+      all:
+        user_rating.gte: 0.1
+        user_rating.lte: 10
+  user_rating:
+    template:
+      name: User_Rating
+    plex_search:
+      all:
+        user_rating.gte: 0.1
+        user_rating.lte: 10
+  
+  rating_Rotten:
+    template:
+      - name: RT-Crit-Rottenred
+    plex_search:
+      all:
+        critic_rating.gte: 0.1
+        critic_rating.lte: 6.0
+
+  rating_Fresh:
+    template:
+      - name: RT-Crit-Freshred
+    plex_search:
+      all:
+        critic_rating.gte: 6.1
+        critic_rating.lte: 10
+  
+  critic_rating:
+    template:
+      name: Critic_Rating
+    plex_search:
+      all:
+        critic_rating.gte: 0.1
+        critic_rating.lte: 10
+
+
+  IMDB-Top-250red:
+    template:
+      - name: IMDbTop250
+        weight: 50
+
+  RT-Cert-Freshred:
+    template:
+      - name: RT-Cert-Fresh
+        weight: 40
+
+  MC-Must-See:
+    template:
+      - name: Meta-Must
+        weight: 45
+
+  Oscarred:
+    template:
+      - name: Oscar
+        weight: 100
+
+  Palmered:
+    template:
+      - name: Cannes
+        weight: 90
+
+  Venicered:
+    template:
+      - name: Venice
+        weight: 80
+
+  Berlinalered:
+    template:
+      - name: Berlin
+        weight: 70
+
+  Sundancered:
+    template:
+      - name: Sundance
+        weight: 60      
