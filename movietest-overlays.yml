@@ -14,7 +14,7 @@ templates:
     optional:
       - overlay_level
     default:
-      rating_type: audience_rating#
+      rating_type: audience_rating
       horizontal_offset: 679
       horizontal_align: left
       vertical_offset: 33
@@ -45,7 +45,7 @@ templates:
     optional:
       - overlay_level
     default:
-      rating_type: user_rating#
+      rating_type: user_rating
       horizontal_offset: 124
       horizontal_align: left
       vertical_offset: 33
@@ -86,7 +86,7 @@ templates:
     optional:
       - overlay_level
     default:
-      rating_type: critic_rating#
+      rating_type: critic_rating
       horizontal_offset: 380
       horizontal_align: left
       vertical_offset: 33
