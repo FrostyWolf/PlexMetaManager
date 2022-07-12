@@ -102,6 +102,26 @@ templates:
       font_size: 60
       font_color: "#FFFFFF"
 
+  Critic_Rating10:
+    optional:
+      - overlay_level
+    default:
+      rating_type: critic_rating#
+      horizontal_offset: 380
+      horizontal_align: left
+      vertical_offset: 33
+      vertical_align: bottom
+    collection_level: <<overlay_level>>
+    overlay:
+      name: text(<<rating_type>>)
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: <<horizontal_align>>
+      vertical_offset: <<vertical_offset>>
+      vertical_align: <<vertical_align>>
+      font: config/fonts/Roboto-Bold.ttf
+      font_size: 60
+      font_color: "#FFFFFF"
+
   IMDbTop250:
     default:
       overlay: <<overlay_name>>
@@ -275,6 +295,14 @@ overlays:
     plex_search:
       all:
         critic_rating.gte: 0.1
+        critic_rating.lte: 9.9
+
+  critic_rating10:
+    template:
+      name: Critic_Rating10
+    plex_search:
+      all:
+        critic_rating.gte: 10
         critic_rating.lte: 10
 
 
