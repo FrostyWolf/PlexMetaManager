@@ -324,16 +324,19 @@ overlays:
     template:
       - name: IMDbTop250
         weight: 50
+        queue: Designation_Queue
 
   RT-Cert-Freshred:
     template:
       - name: RT-Cert-Fresh
         weight: 40
+        queue: Designation_Queue
 
   MC-Must-See:
     template:
       - name: Meta-Must
         weight: 45
+        queue: Designation_Queue
 
   Oscarred:
     template:
