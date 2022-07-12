@@ -9,6 +9,7 @@ templates:
       horizontal_align: left
       vertical_offset: 10
       vertical_align: bottom
+
   Audience_Rating:
     optional:
       - overlay_level
@@ -39,12 +40,13 @@ templates:
       horizontal_align: left
       vertical_offset: 10
       vertical_align: bottom
-  Critic_Rating:
+
+  User_Rating:
     optional:
       - overlay_level
     default:
-      rating_type: critic_rating#
-      horizontal_offset: 380
+      rating_type: user_rating#
+      horizontal_offset: 124
       horizontal_align: left
       vertical_offset: 33
       vertical_align: bottom
@@ -79,12 +81,13 @@ templates:
       horizontal_align: left
       vertical_offset: 10
       vertical_align: bottom
-  User_Rating:
+
+  Critic_Rating:
     optional:
       - overlay_level
     default:
-      rating_type: user_rating#
-      horizontal_offset: 124
+      rating_type: critic_rating#
+      horizontal_offset: 380
       horizontal_align: left
       vertical_offset: 33
       vertical_align: bottom
@@ -97,7 +100,7 @@ templates:
       vertical_align: <<vertical_align>>
       font: config/fonts/Roboto-Bold.ttf
       font_size: 60
-      font_color: "#FFFFFF"  
+      font_color: "#FFFFFF"
 
   IMDbTop250:
     default:
