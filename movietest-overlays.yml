@@ -130,7 +130,6 @@ templates:
       name: <<overlay_name>>
       # git: PMM/overlays/images/<<overlay>>
       queue: Designation_Queue
-      group: logo
       weight: <<weight>>
       horizontal_offset: 0
       horizontal_align: right
@@ -145,7 +144,6 @@ templates:
     overlay:
       name: <<overlay_name>>
       queue: Designation_Queue
-      group: logo
       weight: <<weight>>
       horizontal_offset: 0
       horizontal_align: right
@@ -160,7 +158,6 @@ templates:
     overlay:
       name: <<overlay_name>>
       queue: Designation_Queue
-      group: logo
       weight: <<weight>>
       horizontal_offset: 0
       horizontal_align: right
