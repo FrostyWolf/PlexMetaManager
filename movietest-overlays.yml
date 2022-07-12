@@ -145,9 +145,9 @@ templates:
       name: <<overlay_name>>
       group: logo
       weight: <<weight>>
-      horizontal_offset: 10
+      horizontal_offset: 0
       horizontal_align: right
-      vertical_offset: 10
+      vertical_offset: 0
       vertical_align: bottom
       
   Meta-Must:
