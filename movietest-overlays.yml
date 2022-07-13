@@ -67,7 +67,7 @@ templates:
     collection_level: <<overlay_level>>
     overlay:
       name: RT-Crit-Freshred
-      horizontal_offset: 270
+      horizontal_offset: 272
       horizontal_align: left
       vertical_offset: 10
       vertical_align: bottom
@@ -77,7 +77,7 @@ templates:
     collection_level: <<overlay_level>>
     overlay:
       name: RT-Crit-Rottenred
-      horizontal_offset: 270
+      horizontal_offset: 272
       horizontal_align: left
       vertical_offset: 10
       vertical_align: bottom
