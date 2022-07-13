@@ -361,10 +361,10 @@ overlays:
         critic_rating.lte: 10
 
 
-  IMDB-Top-250red:
-    template:
-      - name: IMDbTop250
-        weight: 50
+#  IMDB-Top-250red:
+#    template:
+#      - name: IMDbTop250
+#        weight: 50
 
   MC-Must-See:
     template:
