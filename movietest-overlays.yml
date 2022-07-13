@@ -190,6 +190,7 @@ templates:
     trakt_list: 
     - https://trakt.tv/users/maxwelldeux/lists/cannes-film-festival-palme-d-or
     - https://trakt.tv/users/maxwelldeux/lists/cannes-film-festival-grand-prix
+    - https://trakt.tv/users/sp1ti/lists/cannes-palme-d-or-winners
     overlay:
       name: <<overlay_name>>
       group: award
@@ -217,7 +218,9 @@ templates:
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
-    trakt_list: https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
+    trakt_list: 
+    - https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
+    - https://trakt.tv/users/eloy86/lists/berlin-international-film-festival-golden-bear-winners
     overlay:
       name: <<overlay_name>>
       group: award
