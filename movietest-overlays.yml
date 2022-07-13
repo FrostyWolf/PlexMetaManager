@@ -315,6 +315,22 @@ templates:
       vertical_offset: 10
       vertical_align: top
 
+  bafta:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    trakt_list: 
+    - https://trakt.tv/users/maxwelldeux/lists/bafta-award-best-film
+    - https://trakt.tv/users/ashota/lists/bafta-award-for-best-film
+    overlay:
+      name: <<overlay_name>>
+      group: award
+      weight: <<weight>>
+      horizontal_offset: 5
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: top
+
 
 queues:
   Designation_Queue:
@@ -445,22 +461,27 @@ overlays:
       - name: golden-globe
         weight: 90 
 
+  bafta:
+    template:
+      - name: bafta
+        weight: 80
+
   Palmered:
     template:
       - name: Cannes
-        weight: 80
+        weight: 70
 
   Berlinalered:
     template:
       - name: Berlin
-        weight: 70
+        weight: 60
 
   Venicered:
     template:
       - name: Venice
-        weight: 60
+        weight: 50
 
   Sundancered:
     template:
       - name: Sundance
-        weight: 50
+        weight: 40
