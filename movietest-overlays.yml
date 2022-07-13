@@ -238,7 +238,7 @@ templates:
       name: <<overlay_name>>
       group: award
       weight: <<weight>>
-      horizontal_offset: 10
+      horizontal_offset: 5
       horizontal_align: left
       vertical_offset: 10
       vertical_align: top
