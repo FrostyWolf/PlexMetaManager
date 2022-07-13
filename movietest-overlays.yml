@@ -169,11 +169,7 @@ templates:
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
-    imdb_list: 
-    - https://www.imdb.com/search/title/?groups=best_picture_winner
-    - https://www.imdb.com/search/title/?groups=best_director_winner
-    - https://www.imdb.com/search/title/?title_type=feature,documentary&groups=oscar_winner
-    trakt_list: https://trakt.tv/users/maxwelldeux/lists/academy-award-best-cinematography
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary&groups=oscar_winner
     overlay:
       name: <<overlay_name>>
       group: award
