@@ -67,6 +67,8 @@ templates:
     collection_level: <<overlay_level>>
     overlay:
       name: RT-Crit-Freshred
+      group: RTRating
+      weight: <<weight>>
       horizontal_offset: 270
       horizontal_align: left
       vertical_offset: 10
@@ -77,6 +79,21 @@ templates:
     collection_level: <<overlay_level>>
     overlay:
       name: RT-Crit-Rottenred
+      group: RTRating
+      weight: <<weight>>
+      horizontal_offset: 270
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+  RT-CF-Rating:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshmovies
+    overlay:
+      name: RT-CF-Rating
+      group: RTRating
+      weight: <<weight>>
       horizontal_offset: 270
       horizontal_align: left
       vertical_offset: 10
@@ -307,6 +324,7 @@ overlays:
   rating_Rotten:
     template:
       - name: RT-Crit-Rottenred
+      weight: 30
     plex_search:
       all:
         critic_rating.gte: 0.1
@@ -315,11 +333,17 @@ overlays:
   rating_Fresh:
     template:
       - name: RT-Crit-Freshred
+      weight: 40
     plex_search:
       all:
         critic_rating.gte: 6.1
         critic_rating.lte: 10
-  
+
+  RT-CF-Rating:
+    template:
+      - name: RT-CF-Rating
+      weight: 50
+
   critic_rating:
     template:
       name: Critic_Rating
