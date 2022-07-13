@@ -371,10 +371,10 @@ overlays:
       - name: Meta-Must
         weight: 45
 
-  RT-Cert-Freshred:
-    template:
-      - name: RT-Cert-Fresh
-        weight: 40
+#  RT-Cert-Freshred:
+#    template:
+#      - name: RT-Cert-Fresh
+#        weight: 40
 
   Oscarred:
     template:
