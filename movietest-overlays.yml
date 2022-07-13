@@ -5,6 +5,44 @@ templates:
     collection_level: <<overlay_level>>
     overlay:
       name: IMDB_Ratingred
+      group: IMDBRating
+      weight: <<weight>>
+      horizontal_offset: 530
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+  IMDB1000:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    overlay:
+      name: IMDB1000
+      group: IMDBRating
+      weight: <<weight>>
+      horizontal_offset: 530
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+  IMDB250:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    overlay:
+      name: IMDB250
+      group: IMDBRating
+      weight: <<weight>>
+      horizontal_offset: 530
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+  IMDB100:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    overlay:
+      name: IMDB100
+      group: IMDBRating
+      weight: <<weight>>
       horizontal_offset: 530
       horizontal_align: left
       vertical_offset: 10
