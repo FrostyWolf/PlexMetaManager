@@ -1,5 +1,5 @@
 templates:
-  IMDB_Ratingred:
+  IMDB_Ratingred:                                                               #IDMB Rating Logo
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
@@ -11,7 +11,7 @@ templates:
       horizontal_align: left
       vertical_offset: 10
       vertical_align: bottom
-  IMDB1000:
+  IMDB1000:                                                                     #IMDB Rating (Top 1000)
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
@@ -24,7 +24,7 @@ templates:
       horizontal_align: left
       vertical_offset: 10
       vertical_align: bottom
-  IMDB250:
+  IMDB250:                                                                      #IMDB Rating Logo (Top 250)
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
@@ -37,7 +37,7 @@ templates:
       horizontal_align: left
       vertical_offset: 10
       vertical_align: bottom
-  IMDB100:
+  IMDB100:                                                                      #IMDB Rating Logo (Top 100)
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
@@ -51,7 +51,7 @@ templates:
       vertical_offset: 10
       vertical_align: bottom
 
-  Audience_Rating:
+  Audience_Rating:                                                               #Audience Rating Text (IMDB Rating)
     optional:
       - overlay_level
     default:
@@ -71,7 +71,7 @@ templates:
       font_size: 60
       font_color: "#FFFFFF"
 
-  MDB_Rating:
+  MDB_Rating:                                                                    #MDBList Rating Logo
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
@@ -82,7 +82,7 @@ templates:
       vertical_offset: 10
       vertical_align: bottom
 
-  User_Rating:
+  User_Rating:                                                                   #User Rating Text (MDBList Score)
     optional:
       - overlay_level
     default:
@@ -102,7 +102,7 @@ templates:
       font_size: 60
       font_color: "#FFFFFF"
 
-  RT-Crit-Freshred:
+  RT-Crit-Freshred:                                                            #Rotten Tomatoes Rating Logo (Fresh)
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
@@ -114,7 +114,7 @@ templates:
       horizontal_align: left
       vertical_offset: 10
       vertical_align: bottom
-  RT-Crit-Rottenred:
+  RT-Crit-Rottenred:                                                           #Rotten Tomatoes Rating Logo (Rotten)
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
@@ -126,7 +126,7 @@ templates:
       horizontal_align: left
       vertical_offset: 10
       vertical_align: bottom
-  RT-CF-Rating:
+  RT-CF-Rating:                                                                #Rotten Tomatoes Rating Logo (Certified Fresh)
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
@@ -140,7 +140,7 @@ templates:
       vertical_offset: 10
       vertical_align: bottom
 
-  Critic_Rating:
+  Critic_Rating:                                                               #Critic Rating Text (Rotten Tomatoes Rating Under 10)
     optional:
       - overlay_level
     default:
@@ -160,7 +160,7 @@ templates:
       font_size: 60
       font_color: "#FFFFFF"
 
-  Critic_Rating10:
+  Critic_Rating10:                                                             #Critic Rating Text (Rotten Tomatoes Rating 10)
     optional:
       - overlay_level
     default:
