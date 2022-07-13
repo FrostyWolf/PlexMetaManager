@@ -331,6 +331,24 @@ templates:
       vertical_offset: 10
       vertical_align: top
 
+  saturn:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    trakt_list: 
+    - https://trakt.tv/users/eloy86/lists/saturn-award-for-best-science-fiction-film-winners
+    letterboxd_list:
+    - https://metamanager.wiki/en/latest/metadata/builders/letterboxd.html
+    overlay:
+      name: <<overlay_name>>
+      group: award
+      weight: <<weight>>
+      horizontal_offset: 5
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: top
+
+
 
 queues:
   Designation_Queue:
@@ -481,7 +499,12 @@ overlays:
       - name: Venice
         weight: 50
 
+  saturn:
+    template:
+      - name: saturn
+        weight: 40
+
   Sundancered:
     template:
       - name: Sundance
-        weight: 40
+        weight: 30
