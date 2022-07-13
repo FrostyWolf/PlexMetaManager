@@ -231,7 +231,10 @@ templates:
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
-    trakt_list: https://trakt.tv/users/maxwelldeux/lists/sundance-film-festival-grand-jury-prize
+    trakt_list:
+    - https://trakt.tv/users/maxwelldeux/lists/sundance-film-festival-grand-jury-prize
+    - https://trakt.tv/users/sp1ti/lists/sundance-film-festival-grand-jury-prize-dramatic
+    - https://trakt.tv/users/sp1ti/lists/sundance-film-festival-grand-jury-prize-documentary
     overlay:
       name: <<overlay_name>>
       group: award
