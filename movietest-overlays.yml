@@ -15,6 +15,7 @@ templates:
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary&groups=top_1000
     overlay:
       name: IMDB1000
       group: IMDBRating
@@ -27,6 +28,7 @@ templates:
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary&groups=top_250
     overlay:
       name: IMDB250
       group: IMDBRating
@@ -39,6 +41,7 @@ templates:
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
+    imdb_list: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary&groups=top_100
     overlay:
       name: IMDB100
       group: IMDBRating
@@ -332,10 +335,27 @@ overlays:
   rating_IMDB:
     template:
       - name: IMDB_Ratingred
+        weight: 20
     plex_search:
       all:
         audience_rating.gte: 0.1
         audience_rating.lte: 10
+
+  IMDB1000:
+    template:
+      - name: IMDB1000
+        weight: 30
+
+  IMDB250:
+    template:
+      - name: IMDB250
+        weight: 40
+
+  IMDB100:
+    template:
+      - name: IMDB100
+        weight: 50
+
   audience_rating:
     template:
       name: Audience_Rating
@@ -351,6 +371,7 @@ overlays:
       all:
         user_rating.gte: 0.1
         user_rating.lte: 10
+
   user_rating:
     template:
       name: User_Rating
