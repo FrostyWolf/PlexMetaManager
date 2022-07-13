@@ -243,6 +243,21 @@ templates:
       vertical_offset: 10
       vertical_align: top
 
+  golden-globe:
+    optional:
+      - overlay_level
+    collection_level: <<overlay_level>>
+    imdb_list: https://www.imdb.com/search/title/?groups=golden_globe_winner
+    overlay:
+      name: <<overlay_name>>
+      group: award
+      weight: <<weight>>
+      horizontal_offset: 10
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: top
+
+
 queues:
   Designation_Queue:
     - horizontal_offset: 0
@@ -327,29 +342,29 @@ overlays:
       - name: IMDbTop250
         weight: 50
 
-  RT-Cert-Freshred:
-    template:
-      - name: RT-Cert-Fresh
-        weight: 40
-
   MC-Must-See:
     template:
       - name: Meta-Must
         weight: 45
+
+  RT-Cert-Freshred:
+    template:
+      - name: RT-Cert-Fresh
+        weight: 40
 
   Oscarred:
     template:
       - name: Oscar
         weight: 100
 
+  golden-globe:
+    template:
+      - name: golden-globe
+        weight: 90 
+
   Palmered:
     template:
       - name: Cannes
-        weight: 90
-
-  Venicered:
-    template:
-      - name: Venice
         weight: 80
 
   Berlinalered:
@@ -357,7 +372,12 @@ overlays:
       - name: Berlin
         weight: 70
 
+  Venicered:
+    template:
+      - name: Venice
+        weight: 60
+
   Sundancered:
     template:
       - name: Sundance
-        weight: 60      
+        weight: 50
