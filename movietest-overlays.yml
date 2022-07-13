@@ -169,7 +169,7 @@ templates:
     optional:
       - overlay_level
     collection_level: <<overlay_level>>
-    imdb_list: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary&groups=oscar_winner
+    imdb_list: https://www.imdb.com/search/title/?groups=oscar_winner
     overlay:
       name: <<overlay_name>>
       group: award
