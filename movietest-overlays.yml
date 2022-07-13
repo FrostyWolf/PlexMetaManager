@@ -324,7 +324,7 @@ overlays:
   rating_Rotten:
     template:
       - name: RT-Crit-Rottenred
-      weight: 30
+        weight: 30
     plex_search:
       all:
         critic_rating.gte: 0.1
@@ -333,7 +333,7 @@ overlays:
   rating_Fresh:
     template:
       - name: RT-Crit-Freshred
-      weight: 40
+        weight: 40
     plex_search:
       all:
         critic_rating.gte: 6.1
@@ -342,7 +342,7 @@ overlays:
   RT-CF-Rating:
     template:
       - name: RT-CF-Rating
-      weight: 50
+        weight: 50
 
   critic_rating:
     template:
