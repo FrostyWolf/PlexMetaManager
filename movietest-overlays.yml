@@ -338,7 +338,7 @@ templates:
     trakt_list: 
     - https://trakt.tv/users/eloy86/lists/saturn-award-for-best-science-fiction-film-winners
     letterboxd_list:
-    - https://metamanager.wiki/en/latest/metadata/builders/letterboxd.html
+    - https://letterboxd.com/jonny5244/list/saturn-awards/
     overlay:
       name: <<overlay_name>>
       group: award
