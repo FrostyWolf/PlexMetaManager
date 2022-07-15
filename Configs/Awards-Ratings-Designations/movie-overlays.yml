@@ -277,7 +277,6 @@ templates:
       overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     trakt_list: 
-    - https://trakt.tv/users/grosejon/lists/best-picture
     - https://trakt.tv/users/kingkearney/lists/oscars-best-picture
     - https://trakt.tv/users/jrpetersjr/lists/academy-award-best-picture
     - https://trakt.tv/users/r_lewis/lists/oscars-best-picture-winners
@@ -434,7 +433,6 @@ templates:
     default:
       overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
-    trakt_list:
     letterboxd_list:
     - https://letterboxd.com/rads/list/sundance-film-festival-winners/
     overlay:
@@ -494,7 +492,6 @@ templates:
       overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     trakt_list:
-    - https://trakt.tv/users/denethor/lists/golden-globe-best-motion-picture
     - https://trakt.tv/users/maxwelldeux/lists/golden-globe-award-best-motion-picture
     letterboxd_list:
     - https://letterboxd.com/gabeberk/list/golden-globe-best-motion-picture-winners/
@@ -515,9 +512,6 @@ templates:
     default:
       overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
-    trakt_list: 
-    - https://trakt.tv/users/maxwelldeux/lists/bafta-award-best-film
-    - https://trakt.tv/users/ashota/lists/bafta-award-for-best-film
     letterboxd_list:
     - https://letterboxd.com/efolds/list/bafta-award-for-best-actress/
     - https://letterboxd.com/rantonucci/list/baftas-best-film-outstanding-british-film/
