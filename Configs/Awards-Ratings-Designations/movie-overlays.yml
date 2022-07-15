@@ -75,12 +75,11 @@ templates:
     collection_level: <<overlay_level>>
     overlay:
       name: text(<<rating_type>>)
-      repo: /Awards-Ratings-Designations/fonts/Roboto-Bold
       horizontal_offset: <<horizontal_offset>>
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
-      font: Roboto-Bold
+      font: config/fonts/Roboto-Bold.ttf
       font_size: 60
       font_color: "#FFFFFF"
 
@@ -421,7 +420,7 @@ queues:
       vertical_align: bottom
 
 overlays:
-  rating_IMDB:
+  IMDB_Ratingred:
     template:
       - name: IMDB_Ratingred
         weight: 20
@@ -453,7 +452,7 @@ overlays:
         audience_rating.gte: 0.1
         audience_rating.lte: 10
 
-  rating_mdb:
+  MDB_Rating:
     template:
       - name: MDB_Rating
     plex_search:
@@ -469,7 +468,7 @@ overlays:
         user_rating.gte: 0.1
         user_rating.lte: 10
   
-  rating_Rotten:
+  RT-Crit-Rottenred:
     template:
       - name: RT-Crit-Rottenred
         weight: 30
@@ -478,7 +477,7 @@ overlays:
         critic_rating.gte: 0.1
         critic_rating.lte: 6.0
 
-  rating_Fresh:
+  RT-Crit-Freshred:
     template:
       - name: RT-Crit-Freshred
         weight: 40
