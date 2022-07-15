@@ -79,7 +79,7 @@ templates:
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
       vertical_align: <<vertical_align>>
-      font: config/fonts/Roboto-Bold.ttf
+      font: fonts/Roboto-Bold.ttf
       font_size: 60
       font_color: "#FFFFFF"
 
