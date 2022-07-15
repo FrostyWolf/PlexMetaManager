@@ -2,9 +2,12 @@ templates:
   IMDB_Ratingred:                                                               #IDMB Rating Logo
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     overlay:
-      name: IMDB_Ratingred
+      name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: IMDBRating
       weight: <<weight>>
       horizontal_offset: 530
@@ -14,10 +17,13 @@ templates:
   IMDB1000:                                                                     #IMDB Rating (Top 1000)
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     imdb_list: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary&groups=top_1000
     overlay:
-      name: IMDB1000
+      name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: IMDBRating
       weight: <<weight>>
       horizontal_offset: 530
@@ -27,10 +33,13 @@ templates:
   IMDB250:                                                                      #IMDB Rating Logo (Top 250)
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     imdb_list: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary&groups=top_250
     overlay:
-      name: IMDB250
+      name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: IMDBRating
       weight: <<weight>>
       horizontal_offset: 530
@@ -40,10 +49,13 @@ templates:
   IMDB100:                                                                      #IMDB Rating Logo (Top 100)
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     imdb_list: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary&groups=top_100
     overlay:
-      name: IMDB100
+      name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: IMDBRating
       weight: <<weight>>
       horizontal_offset: 530
@@ -74,9 +86,12 @@ templates:
   MDB_Rating:                                                                    #MDBList Rating Logo
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     overlay:
-      name: MDB_Rating
+      name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       horizontal_offset: 10
       horizontal_align: left
       vertical_offset: 10
@@ -105,9 +120,12 @@ templates:
   RT-Crit-Freshred:                                                            #Rotten Tomatoes Rating Logo (Fresh)
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     overlay:
-      name: RT-Crit-Freshred
+      name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: RTRating
       weight: <<weight>>
       horizontal_offset: 270
@@ -117,9 +135,12 @@ templates:
   RT-Crit-Rottenred:                                                           #Rotten Tomatoes Rating Logo (Rotten)
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     overlay:
-      name: RT-Crit-Rottenred
+      name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: RTRating
       weight: <<weight>>
       horizontal_offset: 270
@@ -129,10 +150,13 @@ templates:
   RT-CF-Rating:                                                                #Rotten Tomatoes Rating Logo (Certified Fresh)
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshmovies
     overlay:
-      name: RT-CF-Rating
+      name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: RTRating
       weight: <<weight>>
       horizontal_offset: 270
@@ -186,7 +210,7 @@ templates:
     imdb_chart: top_<<library_type>>s
     overlay:
       name: <<overlay_name>>
-      # git: PMM/overlays/images/<<overlay>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       queue: Designation_Queue
       weight: <<weight>>
       horizontal_offset: 0
@@ -197,10 +221,13 @@ templates:
   RT-Cert-Fresh:
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshmovies
     overlay:
       name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       queue: Designation_Queue
       weight: <<weight>>
       horizontal_offset: 0
@@ -211,10 +238,13 @@ templates:
   Meta-Must:
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     mdblist_list: https://mdblist.com/lists/frostywolf/metacritic-must-see-movies/
     overlay:
       name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       queue: Designation_Queue
       weight: <<weight>>
       horizontal_offset: 0
@@ -226,10 +256,13 @@ templates:
   Oscar:
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     imdb_list: https://www.imdb.com/search/title/?groups=oscar_winner
     overlay:
       name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: award
       weight: <<weight>>
       horizontal_offset: 10
@@ -240,6 +273,8 @@ templates:
   Cannes:
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     trakt_list: 
     - https://trakt.tv/users/maxwelldeux/lists/cannes-film-festival-palme-d-or
@@ -247,6 +282,7 @@ templates:
     - https://trakt.tv/users/sp1ti/lists/cannes-palme-d-or-winners
     overlay:
       name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: award
       weight: <<weight>>
       horizontal_offset: 10
@@ -257,10 +293,13 @@ templates:
   Venice:
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     trakt_list: https://trakt.tv/users/maxwelldeux/lists/venice-film-festival-golden-lion
     overlay:
       name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: award
       weight: <<weight>>
       horizontal_offset: 5
@@ -271,12 +310,15 @@ templates:
   Berlin:
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     trakt_list: 
     - https://trakt.tv/users/maxwelldeux/lists/berlin-international-film-festival-golden-bears
     - https://trakt.tv/users/eloy86/lists/berlin-international-film-festival-golden-bear-winners
     overlay:
       name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: award
       weight: <<weight>>
       horizontal_offset: 5
@@ -287,6 +329,8 @@ templates:
   Sundance:
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     trakt_list:
     - https://trakt.tv/users/maxwelldeux/lists/sundance-film-festival-grand-jury-prize
@@ -294,6 +338,7 @@ templates:
     - https://trakt.tv/users/sp1ti/lists/sundance-film-festival-grand-jury-prize-documentary
     overlay:
       name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: award
       weight: <<weight>>
       horizontal_offset: 10
@@ -304,10 +349,13 @@ templates:
   golden-globe:
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     imdb_list: https://www.imdb.com/search/title/?groups=golden_globe_winner
     overlay:
       name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: award
       weight: <<weight>>
       horizontal_offset: 5
@@ -318,12 +366,15 @@ templates:
   bafta:
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     trakt_list: 
     - https://trakt.tv/users/maxwelldeux/lists/bafta-award-best-film
     - https://trakt.tv/users/ashota/lists/bafta-award-for-best-film
     overlay:
       name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: award
       weight: <<weight>>
       horizontal_offset: 5
@@ -334,6 +385,8 @@ templates:
   saturn:
     optional:
       - overlay_level
+    default:
+      overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     trakt_list: 
     - https://trakt.tv/users/eloy86/lists/saturn-award-for-best-science-fiction-film-winners
@@ -341,6 +394,7 @@ templates:
     - https://letterboxd.com/jonny5244/list/saturn-awards/
     overlay:
       name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: award
       weight: <<weight>>
       horizontal_offset: 5
