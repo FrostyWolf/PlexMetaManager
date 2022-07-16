@@ -265,9 +265,9 @@ templates:
       repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: award
       weight: <<weight>>
-      horizontal_offset: 10
+      horizontal_offset: 5
       horizontal_align: left
-      vertical_offset: 10
+      vertical_offset: 5
       vertical_align: top
 
   Oscarglow:
@@ -289,9 +289,9 @@ templates:
       repo: /Awards-Ratings-Designations/images/<<overlay>>
       group: award
       weight: <<weight>>
-      horizontal_offset: 0
+      horizontal_offset: 2
       horizontal_align: left
-      vertical_offset: 0
+      vertical_offset: 2
       vertical_align: top
 
   Cannes:
