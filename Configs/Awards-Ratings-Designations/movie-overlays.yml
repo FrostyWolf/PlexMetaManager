@@ -608,7 +608,7 @@ queues:
       vertical_offset: 460
       vertical_align: bottom
 
-  Rating_Queue_Logo:
+  Rating_Queue:
       horizontal_offset: 10
       horizontal_align: left
       vertical_offset: 10
