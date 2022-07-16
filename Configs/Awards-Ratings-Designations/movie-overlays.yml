@@ -600,6 +600,10 @@ overlays:
     template:
       - name: IMDB100
         weight: 50
+    suppress_overlays:
+      - IMDB250
+      - IMDB1000
+      - IMDB_Ratingred
 
   audience_rating:
     template:
