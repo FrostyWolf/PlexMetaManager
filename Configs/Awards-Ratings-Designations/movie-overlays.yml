@@ -70,7 +70,7 @@ templates:
       rating_type: audience_rating
       horizontal_offset: 149
       horizontal_align: left
-      vertical_offset: 23
+      vertical_offset: 0
       vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
@@ -108,7 +108,7 @@ templates:
       rating_type: user_rating
       horizontal_offset: 114
       horizontal_align: left
-      vertical_offset: 23
+      vertical_offset: 0
       vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
@@ -177,7 +177,7 @@ templates:
       rating_type: critic_rating
       horizontal_offset: 111
       horizontal_align: left
-      vertical_offset: 23
+      vertical_offset: 0
       vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
@@ -199,7 +199,7 @@ templates:
       rating_type: critic_rating#
       horizontal_offset: 115
       horizontal_align: left
-      vertical_offset: 23
+      vertical_offset: 0
       vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
@@ -588,15 +588,15 @@ queues:
   Rating_Queue_Text:
     - horizontal_offset: 10
       horizontal_align: left
-      vertical_offset: 10
+      vertical_offset: 23
       vertical_align: bottom
     - horizontal_offset: 270
       horizontal_align: left
-      vertical_offset: 10
+      vertical_offset: 23
       vertical_align: bottom
     - horizontal_offset: 530
       horizontal_align: left
-      vertical_offset: 10
+      vertical_offset: 23
       vertical_align: bottom
 
 overlays:
