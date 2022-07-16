@@ -68,13 +68,15 @@ templates:
       - overlay_level
     default:
       rating_type: audience_rating
-      horizontal_offset: 679
+      horizontal_offset: 149
       horizontal_align: left
-      vertical_offset: 33
+      vertical_offset: 23
       vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
       name: text(<<rating_type>>)
+      queue: Rating_Queue_Text
+      weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
@@ -104,13 +106,15 @@ templates:
       - overlay_level
     default:
       rating_type: user_rating
-      horizontal_offset: 124
+      horizontal_offset: 114
       horizontal_align: left
-      vertical_offset: 33
+      vertical_offset: 23
       vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
       name: text(<<rating_type>>)
+      queue: Rating_Queue_Text
+      weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
@@ -171,13 +175,15 @@ templates:
       - overlay_level
     default:
       rating_type: critic_rating
-      horizontal_offset: 381
+      horizontal_offset: 111
       horizontal_align: left
-      vertical_offset: 33
+      vertical_offset: 23
       vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
       name: text(<<rating_type>>)
+      queue: Rating_Queue_Text
+      weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
@@ -191,13 +197,15 @@ templates:
       - overlay_level
     default:
       rating_type: critic_rating#
-      horizontal_offset: 385
+      horizontal_offset: 115
       horizontal_align: left
-      vertical_offset: 33
+      vertical_offset: 23
       vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
       name: text(<<rating_type>>)
+      queue: Rating_Queue_Text
+      weight: <<weight>>
       horizontal_offset: <<horizontal_offset>>
       horizontal_align: <<horizontal_align>>
       vertical_offset: <<vertical_offset>>
@@ -628,6 +636,7 @@ overlays:
   audience_rating:
     template:
       name: Audience_Rating
+      weight: 80
     plex_search:
       all:
         audience_rating.gte: 0.1
@@ -645,6 +654,7 @@ overlays:
   user_rating:
     template:
       name: User_Rating
+      weight: 100
     plex_search:
       all:
         user_rating.gte: 0.1
@@ -681,6 +691,7 @@ overlays:
   critic_rating:
     template:
       name: Critic_Rating
+      weight: 90
     plex_search:
       all:
         critic_rating.gte: 0.1
@@ -689,10 +700,13 @@ overlays:
   critic_rating10:
     template:
       name: Critic_Rating10
+      weight: 90
     plex_search:
       all:
         critic_rating.gte: 10
         critic_rating.lte: 10
+    suppress_overlays:
+      - Critic_Rating
 
   MC-Must-See:
     template:
