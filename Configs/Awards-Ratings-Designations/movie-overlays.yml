@@ -668,7 +668,7 @@ overlays:
         critic_rating.gte: 6.1
         critic_rating.lte: 10
     suppress_overlays:
-      - RT-Crit-Freshred
+      - RT-Crit-Rottenred
 
   RT-CF-Rating:
     template:
