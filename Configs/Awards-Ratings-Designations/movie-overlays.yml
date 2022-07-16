@@ -204,37 +204,6 @@ templates:
       font_size: 60
       font_color: "#FFFFFF"
 
-  IMDbTop250:
-    default:
-      overlay: <<overlay_name>>
-    imdb_chart: top_<<library_type>>s
-    overlay:
-      name: <<overlay_name>>
-      repo: /Awards-Ratings-Designations/images/<<overlay>>
-      queue: Designation_Queue
-      weight: <<weight>>
-      horizontal_offset: 0
-      horizontal_align: right
-      vertical_offset: 0
-      vertical_align: bottom
-  
-  RT-Cert-Fresh:
-    optional:
-      - overlay_level
-    default:
-      overlay: <<overlay_name>>
-    collection_level: <<overlay_level>>
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshmovies
-    overlay:
-      name: <<overlay_name>>
-      repo: /Awards-Ratings-Designations/images/<<overlay>>
-      queue: Designation_Queue
-      weight: <<weight>>
-      horizontal_offset: 0
-      horizontal_align: right
-      vertical_offset: 0
-      vertical_align: bottom
-      
   Meta-Must:
     optional:
       - overlay_level
@@ -245,7 +214,6 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      queue: Designation_Queue
       weight: <<weight>>
       horizontal_offset: 2
       horizontal_align: right
@@ -594,20 +562,6 @@ templates:
       vertical_align: top
 
 queues:
-  Designation_Queue:
-    - horizontal_offset: 0
-      horizontal_align: right
-      vertical_offset: 0
-      vertical_align: bottom
-    - horizontal_offset: 0
-      horizontal_align: right
-      vertical_offset: 230
-      vertical_align: bottom
-    - horizontal_offset: 0
-      horizontal_align: right
-      vertical_offset: 460
-      vertical_align: bottom
-
   Rating_Queue:
     - horizontal_offset: 10
       horizontal_align: left
@@ -710,21 +664,10 @@ overlays:
         critic_rating.gte: 10
         critic_rating.lte: 10
 
-
-#  IMDB-Top-250red:
-#    template:
-#      - name: IMDbTop250
-#        weight: 50
-
   MC-Must-See:
     template:
       - name: Meta-Must
         weight: 45
-
-#  RT-Cert-Freshred:
-#    template:
-#      - name: RT-Cert-Fresh
-#        weight: 40
 
   Oscarredglow:
     template:
