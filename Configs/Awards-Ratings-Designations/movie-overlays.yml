@@ -8,7 +8,7 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      group: IMDBRating
+      queue: Rating_Queue_Logo
       weight: <<weight>>
       horizontal_offset: 530
       horizontal_align: left
@@ -24,7 +24,7 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      group: IMDBRating
+      queue: Rating_Queue_Logo
       weight: <<weight>>
       horizontal_offset: 530
       horizontal_align: left
@@ -40,7 +40,7 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      group: IMDBRating
+      queue: Rating_Queue_Logo
       weight: <<weight>>
       horizontal_offset: 530
       horizontal_align: left
@@ -56,7 +56,7 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      group: IMDBRating
+      queue: Rating_Queue_Logo
       weight: <<weight>>
       horizontal_offset: 530
       horizontal_align: left
@@ -92,6 +92,8 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
+      queue: Rating_Queue_Logo
+      weight: <<weight>>
       horizontal_offset: 10
       horizontal_align: left
       vertical_offset: 10
@@ -126,7 +128,7 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      group: RTRating
+      queue: Rating_Queue_Logo
       weight: <<weight>>
       horizontal_offset: 270
       horizontal_align: left
@@ -141,7 +143,7 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      group: RTRating
+      queue: Rating_Queue_Logo
       weight: <<weight>>
       horizontal_offset: 270
       horizontal_align: left
@@ -157,7 +159,7 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      group: RTRating
+      queue: Rating_Queue_Logo
       weight: <<weight>>
       horizontal_offset: 270
       horizontal_align: left
@@ -593,7 +595,7 @@ overlays:
   IMDB_Ratingred:
     template:
       - name: IMDB_Ratingred
-        weight: 20
+        weight: 80
     plex_search:
       all:
         audience_rating.gte: 0.1
@@ -602,14 +604,14 @@ overlays:
   IMDB1000:
     template:
       - name: IMDB1000
-        weight: 30
+        weight: 80
     suppress_overlays:
       - IMDB_Ratingred
 
   IMDB250:
     template:
       - name: IMDB250
-        weight: 40
+        weight: 80
     suppress_overlays:
       - IMDB1000
       - IMDB_Ratingred
@@ -617,7 +619,7 @@ overlays:
   IMDB100:
     template:
       - name: IMDB100
-        weight: 50
+        weight: 80
     suppress_overlays:
       - IMDB250
       - IMDB1000
@@ -634,6 +636,7 @@ overlays:
   MDB_Rating:
     template:
       - name: MDB_Rating
+        weight: 100
     plex_search:
       all:
         user_rating.gte: 0.1
@@ -650,7 +653,7 @@ overlays:
   RT-Crit-Rottenred:
     template:
       - name: RT-Crit-Rottenred
-        weight: 30
+        weight: 90
     plex_search:
       all:
         critic_rating.gte: 0.1
@@ -659,7 +662,7 @@ overlays:
   RT-Crit-Freshred:
     template:
       - name: RT-Crit-Freshred
-        weight: 40
+        weight: 90
     plex_search:
       all:
         critic_rating.gte: 6.1
@@ -670,7 +673,7 @@ overlays:
   RT-CF-Rating:
     template:
       - name: RT-CF-Rating
-        weight: 50
+        weight: 90
     suppress_overlays:
       - RT-Crit-Freshred
       - RT-Crit-Rottenred
