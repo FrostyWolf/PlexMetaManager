@@ -588,15 +588,15 @@ queues:
   Rating_Queue_Text:
     - horizontal_offset: 159
       horizontal_align: left
-      vertical_offset: 23
+      vertical_offset: 33
       vertical_align: bottom
     - horizontal_offset: 429
       horizontal_align: left
-      vertical_offset: 23
+      vertical_offset: 33
       vertical_align: bottom
     - horizontal_offset: 679
       horizontal_align: left
-      vertical_offset: 23
+      vertical_offset: 33
       vertical_align: bottom
 
 overlays:
