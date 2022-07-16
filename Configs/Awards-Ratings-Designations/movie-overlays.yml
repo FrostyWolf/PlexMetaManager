@@ -608,6 +608,20 @@ queues:
       vertical_offset: 460
       vertical_align: bottom
 
+  Rating_Queue_Logo:
+      horizontal_offset: 10
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+      horizontal_offset: 270
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+      horizontal_offset: 530
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+
 overlays:
   IMDB_Ratingred:
     template:
