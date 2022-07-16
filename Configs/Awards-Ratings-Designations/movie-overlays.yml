@@ -575,7 +575,6 @@ queues:
       horizontal_align: left
       vertical_offset: 10
       vertical_align: bottom
-
   Rating_Queue_Text:
     - horizontal_offset: 10
       horizontal_align: left
