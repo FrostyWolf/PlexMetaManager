@@ -590,11 +590,16 @@ overlays:
     template:
       - name: IMDB1000
         weight: 30
+    suppress_overlays:
+      - IMDB_Ratingred
 
   IMDB250:
     template:
       - name: IMDB250
         weight: 40
+    suppress_overlays:
+      - IMDB1000
+      - IMDB_Ratingred
 
   IMDB100:
     template:
@@ -646,11 +651,16 @@ overlays:
       all:
         critic_rating.gte: 6.1
         critic_rating.lte: 10
+    suppress_overlays:
+      - RT-Crit-Freshred
 
   RT-CF-Rating:
     template:
       - name: RT-CF-Rating
         weight: 50
+    suppress_overlays:
+      - RT-Crit-Freshred
+      - RT-Crit-Rottenred
 
   critic_rating:
     template:
