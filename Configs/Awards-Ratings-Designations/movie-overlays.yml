@@ -609,15 +609,15 @@ queues:
       vertical_align: bottom
 
   Rating_Queue:
-      horizontal_offset: 10
+    - horizontal_offset: 10
       horizontal_align: left
       vertical_offset: 10
       vertical_align: bottom
-      horizontal_offset: 270
+    - horizontal_offset: 270
       horizontal_align: left
       vertical_offset: 10
       vertical_align: bottom
-      horizontal_offset: 530
+    - horizontal_offset: 530
       horizontal_align: left
       vertical_offset: 10
       vertical_align: bottom
