@@ -213,6 +213,8 @@ templates:
       font: fonts/Roboto-Bold.ttf
       font_size: 60
       font_color: "#FFFFFF"
+      addon_offset: 115
+      addon_position: left
 
   Meta-Must:
     optional:
