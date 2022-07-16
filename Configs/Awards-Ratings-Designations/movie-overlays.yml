@@ -122,9 +122,6 @@ templates:
       font: fonts/Roboto-Bold.ttf
       font_size: 60
       font_color: "#FFFFFF"
-      repo: /Awards-Ratings-Designations/images/<<overlay_name>>
-      addon_position: left
-      addon_offset: -114
 
   RT-Crit-Freshred:                                                            #Rotten Tomatoes Rating Logo (Fresh)
     optional:
@@ -589,52 +586,52 @@ queues:
       vertical_offset: 10
       vertical_align: bottom
   Rating_Queue_Text:
-    - horizontal_offset: 10
+    - horizontal_offset: 159
       horizontal_align: left
       vertical_offset: 23
       vertical_align: bottom
-    - horizontal_offset: 270
+    - horizontal_offset: 429
       horizontal_align: left
       vertical_offset: 23
       vertical_align: bottom
-    - horizontal_offset: 530
+    - horizontal_offset: 679
       horizontal_align: left
       vertical_offset: 23
       vertical_align: bottom
 
 overlays:
-#  IMDB_Ratingred:
-#    template:
-#      - name: IMDB_Ratingred
-#        weight: 80
-#    plex_search:
-#      all:
-#        audience_rating.gte: 0.1
-#        audience_rating.lte: 10
+  IMDB_Ratingred:
+    template:
+      - name: IMDB_Ratingred
+        weight: 80
+    plex_search:
+      all:
+        audience_rating.gte: 0.1
+        audience_rating.lte: 10
 
-#  IMDB1000:
-#    template:
-#      - name: IMDB1000
-#        weight: 80
-#    suppress_overlays:
-#      - IMDB_Ratingred
+  IMDB1000:
+    template:
+      - name: IMDB1000
+        weight: 80
+    suppress_overlays:
+      - IMDB_Ratingred
 
-#  IMDB250:
-#    template:
-#      - name: IMDB250
-#        weight: 80
-#    suppress_overlays:
-#      - IMDB1000
-#      - IMDB_Ratingred
+  IMDB250:
+    template:
+      - name: IMDB250
+        weight: 80
+    suppress_overlays:
+      - IMDB1000
+      - IMDB_Ratingred
 
-#  IMDB100:
-#    template:
-#      - name: IMDB100
-#        weight: 80
-#    suppress_overlays:
-#      - IMDB250
-#      - IMDB1000
-#      - IMDB_Ratingred
+  IMDB100:
+    template:
+      - name: IMDB100
+        weight: 80
+    suppress_overlays:
+      - IMDB250
+      - IMDB1000
+      - IMDB_Ratingred
 
   audience_rating:
     template:
@@ -645,14 +642,14 @@ overlays:
         audience_rating.gte: 0.1
         audience_rating.lte: 10
 
-#  MDB_Rating:
-#    template:
-#      - name: MDB_Rating
-#        weight: 100
-#    plex_search:
-#      all:
-#        user_rating.gte: 0.1
-#        user_rating.lte: 10
+  MDB_Rating:
+    template:
+      - name: MDB_Rating
+        weight: 100
+    plex_search:
+      all:
+        user_rating.gte: 0.1
+        user_rating.lte: 10
 
   user_rating:
     template:
@@ -663,33 +660,33 @@ overlays:
         user_rating.gte: 0.1
         user_rating.lte: 10
   
-#  RT-Crit-Rottenred:
-#    template:
-#      - name: RT-Crit-Rottenred
-#        weight: 90
-#    plex_search:
-#      all:
-#        critic_rating.gte: 0.1
-#        critic_rating.lte: 6.0
+  RT-Crit-Rottenred:
+    template:
+      - name: RT-Crit-Rottenred
+        weight: 90
+    plex_search:
+      all:
+        critic_rating.gte: 0.1
+        critic_rating.lte: 6.0
 
-#  RT-Crit-Freshred:
-#    template:
-#      - name: RT-Crit-Freshred
-#        weight: 90
-#    plex_search:
-#      all:
-#        critic_rating.gte: 6.1
-#        critic_rating.lte: 10
-#    suppress_overlays:
-#      - RT-Crit-Rottenred
+  RT-Crit-Freshred:
+    template:
+      - name: RT-Crit-Freshred
+        weight: 90
+    plex_search:
+      all:
+        critic_rating.gte: 6.1
+        critic_rating.lte: 10
+    suppress_overlays:
+      - RT-Crit-Rottenred
 
-#  RT-CF-Rating:
-#    template:
-#      - name: RT-CF-Rating
-#        weight: 90
-#    suppress_overlays:
-#      - RT-Crit-Freshred
-#      - RT-Crit-Rottenred
+  RT-CF-Rating:
+    template:
+      - name: RT-CF-Rating
+        weight: 90
+    suppress_overlays:
+      - RT-Crit-Freshred
+      - RT-Crit-Rottenred
 
   critic_rating:
     template:
