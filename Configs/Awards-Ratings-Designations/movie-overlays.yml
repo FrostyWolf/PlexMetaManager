@@ -10,10 +10,6 @@ templates:
       repo: /Awards-Ratings-Designations/images/<<overlay>>
       queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 530
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
   IMDB1000:                                                                     #IMDB Rating (Top 1000)
     optional:
       - overlay_level
@@ -26,10 +22,6 @@ templates:
       repo: /Awards-Ratings-Designations/images/<<overlay>>
       queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 530
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
   IMDB250:                                                                      #IMDB Rating Logo (Top 250)
     optional:
       - overlay_level
@@ -42,10 +34,6 @@ templates:
       repo: /Awards-Ratings-Designations/images/<<overlay>>
       queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 530
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
   IMDB100:                                                                      #IMDB Rating Logo (Top 100)
     optional:
       - overlay_level
@@ -58,29 +46,17 @@ templates:
       repo: /Awards-Ratings-Designations/images/<<overlay>>
       queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 530
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
 
   Audience_Rating:                                                               #Audience Rating Text (IMDB Rating)
     optional:
       - overlay_level
     default:
       rating_type: audience_rating
-      horizontal_offset: 149
-      horizontal_align: left
-      vertical_offset: 0
-      vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
       name: text(<<rating_type>>)
       queue: Rating_Queue_Text
       weight: <<weight>>
-      horizontal_offset: <<horizontal_offset>>
-      horizontal_align: <<horizontal_align>>
-      vertical_offset: <<vertical_offset>>
-      vertical_align: <<vertical_align>>
       font: fonts/Roboto-Bold.ttf
       font_size: 60
       font_color: "#FFFFFF"
@@ -96,29 +72,17 @@ templates:
       repo: /Awards-Ratings-Designations/images/<<overlay>>
       queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 10
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
 
   User_Rating:                                                                   #User Rating Text (MDBList Score)
     optional:
       - overlay_level
     default:
       rating_type: user_rating
-      horizontal_offset: 114
-      horizontal_align: left
-      vertical_offset: 0
-      vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
       name: text(<<rating_type>>)
       queue: Rating_Queue_Text
       weight: <<weight>>
-      horizontal_offset: <<horizontal_offset>>
-      horizontal_align: <<horizontal_align>>
-      vertical_offset: <<vertical_offset>>
-      vertical_align: <<vertical_align>>
       font: fonts/Roboto-Bold.ttf
       font_size: 60
       font_color: "#FFFFFF"
@@ -134,10 +98,6 @@ templates:
       repo: /Awards-Ratings-Designations/images/<<overlay>>
       queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 270
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
   RT-Crit-Rottenred:                                                           #Rotten Tomatoes Rating Logo (Rotten)
     optional:
       - overlay_level
@@ -149,10 +109,6 @@ templates:
       repo: /Awards-Ratings-Designations/images/<<overlay>>
       queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 270
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
   RT-CF-Rating:                                                                #Rotten Tomatoes Rating Logo (Certified Fresh)
     optional:
       - overlay_level
@@ -165,29 +121,17 @@ templates:
       repo: /Awards-Ratings-Designations/images/<<overlay>>
       queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 270
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
 
   Critic_Rating:                                                               #Critic Rating Text (Rotten Tomatoes Rating Under 10)
     optional:
       - overlay_level
     default:
       rating_type: critic_rating
-      horizontal_offset: 111
-      horizontal_align: left
-      vertical_offset: 0
-      vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
       name: text(<<rating_type>>)
       queue: Rating_Queue_Text
       weight: <<weight>>
-      horizontal_offset: <<horizontal_offset>>
-      horizontal_align: <<horizontal_align>>
-      vertical_offset: <<vertical_offset>>
-      vertical_align: <<vertical_align>>
       font: fonts/Roboto-Bold.ttf
       font_size: 60
       font_color: "#FFFFFF"
@@ -197,19 +141,11 @@ templates:
       - overlay_level
     default:
       rating_type: critic_rating#
-      horizontal_offset: 115
-      horizontal_align: left
-      vertical_offset: 0
-      vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
       name: text(<<rating_type>>)
       queue: Rating_Queue_Text
       weight: <<weight>>
-      horizontal_offset: <<horizontal_offset>>
-      horizontal_align: <<horizontal_align>>
-      vertical_offset: <<vertical_offset>>
-      vertical_align: <<vertical_align>>
       font: fonts/Roboto-Bold.ttf
       font_size: 60
       font_color: "#FFFFFF"
@@ -590,7 +526,7 @@ queues:
       horizontal_align: left
       vertical_offset: 33
       vertical_align: bottom
-    - horizontal_offset: 406
+    - horizontal_offset: 426
       horizontal_align: left
       vertical_offset: 33
       vertical_align: bottom
