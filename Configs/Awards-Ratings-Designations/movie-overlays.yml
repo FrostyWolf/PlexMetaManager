@@ -8,12 +8,8 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      group: IMDBRating
+      queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 530
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
   IMDB1000:                                                                     #IMDB Rating (Top 1000)
     optional:
       - overlay_level
@@ -24,12 +20,8 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      group: IMDBRating
+      queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 530
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
   IMDB250:                                                                      #IMDB Rating Logo (Top 250)
     optional:
       - overlay_level
@@ -40,12 +32,8 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      group: IMDBRating
+      queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 530
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
   IMDB100:                                                                      #IMDB Rating Logo (Top 100)
     optional:
       - overlay_level
@@ -56,29 +44,19 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      group: IMDBRating
+      queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 530
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
 
   Audience_Rating:                                                               #Audience Rating Text (IMDB Rating)
     optional:
       - overlay_level
     default:
       rating_type: audience_rating
-      horizontal_offset: 679
-      horizontal_align: left
-      vertical_offset: 33
-      vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
       name: text(<<rating_type>>)
-      horizontal_offset: <<horizontal_offset>>
-      horizontal_align: <<horizontal_align>>
-      vertical_offset: <<vertical_offset>>
-      vertical_align: <<vertical_align>>
+      queue: Rating_Queue_Text
+      weight: <<weight>>
       font: fonts/Roboto-Bold.ttf
       font_size: 60
       font_color: "#FFFFFF"
@@ -92,27 +70,19 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      horizontal_offset: 10
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
+      queue: Rating_Queue_Logo
+      weight: <<weight>>
 
   User_Rating:                                                                   #User Rating Text (MDBList Score)
     optional:
       - overlay_level
     default:
       rating_type: user_rating
-      horizontal_offset: 124
-      horizontal_align: left
-      vertical_offset: 33
-      vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
       name: text(<<rating_type>>)
-      horizontal_offset: <<horizontal_offset>>
-      horizontal_align: <<horizontal_align>>
-      vertical_offset: <<vertical_offset>>
-      vertical_align: <<vertical_align>>
+      queue: Rating_Queue_Text
+      weight: <<weight>>
       font: fonts/Roboto-Bold.ttf
       font_size: 60
       font_color: "#FFFFFF"
@@ -126,12 +96,8 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      group: RTRating
+      queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 270
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
   RT-Crit-Rottenred:                                                           #Rotten Tomatoes Rating Logo (Rotten)
     optional:
       - overlay_level
@@ -141,12 +107,8 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      group: RTRating
+      queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 270
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
   RT-CF-Rating:                                                                #Rotten Tomatoes Rating Logo (Certified Fresh)
     optional:
       - overlay_level
@@ -157,29 +119,19 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      group: RTRating
+      queue: Rating_Queue_Logo
       weight: <<weight>>
-      horizontal_offset: 270
-      horizontal_align: left
-      vertical_offset: 10
-      vertical_align: bottom
 
   Critic_Rating:                                                               #Critic Rating Text (Rotten Tomatoes Rating Under 10)
     optional:
       - overlay_level
     default:
       rating_type: critic_rating
-      horizontal_offset: 381
-      horizontal_align: left
-      vertical_offset: 33
-      vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
       name: text(<<rating_type>>)
-      horizontal_offset: <<horizontal_offset>>
-      horizontal_align: <<horizontal_align>>
-      vertical_offset: <<vertical_offset>>
-      vertical_align: <<vertical_align>>
+      queue: Rating_Queue_Text
+      weight: <<weight>>
       font: fonts/Roboto-Bold.ttf
       font_size: 60
       font_color: "#FFFFFF"
@@ -189,52 +141,15 @@ templates:
       - overlay_level
     default:
       rating_type: critic_rating#
-      horizontal_offset: 385
-      horizontal_align: left
-      vertical_offset: 33
-      vertical_align: bottom
     collection_level: <<overlay_level>>
     overlay:
       name: text(<<rating_type>>)
-      horizontal_offset: <<horizontal_offset>>
-      horizontal_align: <<horizontal_align>>
-      vertical_offset: <<vertical_offset>>
-      vertical_align: <<vertical_align>>
+      queue: Rating_Queue_Text
+      weight: <<weight>>
       font: fonts/Roboto-Bold.ttf
       font_size: 60
       font_color: "#FFFFFF"
 
-  IMDbTop250:
-    default:
-      overlay: <<overlay_name>>
-    imdb_chart: top_<<library_type>>s
-    overlay:
-      name: <<overlay_name>>
-      repo: /Awards-Ratings-Designations/images/<<overlay>>
-      queue: Designation_Queue
-      weight: <<weight>>
-      horizontal_offset: 0
-      horizontal_align: right
-      vertical_offset: 0
-      vertical_align: bottom
-  
-  RT-Cert-Fresh:
-    optional:
-      - overlay_level
-    default:
-      overlay: <<overlay_name>>
-    collection_level: <<overlay_level>>
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshmovies
-    overlay:
-      name: <<overlay_name>>
-      repo: /Awards-Ratings-Designations/images/<<overlay>>
-      queue: Designation_Queue
-      weight: <<weight>>
-      horizontal_offset: 0
-      horizontal_align: right
-      vertical_offset: 0
-      vertical_align: bottom
-      
   Meta-Must:
     optional:
       - overlay_level
@@ -245,7 +160,6 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      queue: Designation_Queue
       weight: <<weight>>
       horizontal_offset: 2
       horizontal_align: right
@@ -594,25 +508,38 @@ templates:
       vertical_align: top
 
 queues:
-  Designation_Queue:
-    - horizontal_offset: 0
-      horizontal_align: right
-      vertical_offset: 0
+  Rating_Queue_Logo:
+    - horizontal_offset: 10
+      horizontal_align: left
+      vertical_offset: 10
       vertical_align: bottom
-    - horizontal_offset: 0
-      horizontal_align: right
-      vertical_offset: 230
+    - horizontal_offset: 270
+      horizontal_align: left
+      vertical_offset: 10
       vertical_align: bottom
-    - horizontal_offset: 0
-      horizontal_align: right
-      vertical_offset: 460
+    - horizontal_offset: 530
+      horizontal_align: left
+      vertical_offset: 10
+      vertical_align: bottom
+  Rating_Queue_Text:
+    - horizontal_offset: 159
+      horizontal_align: left
+      vertical_offset: 33
+      vertical_align: bottom
+    - horizontal_offset: 424
+      horizontal_align: left
+      vertical_offset: 33
+      vertical_align: bottom
+    - horizontal_offset: 679
+      horizontal_align: left
+      vertical_offset: 33
       vertical_align: bottom
 
 overlays:
   IMDB_Ratingred:
     template:
       - name: IMDB_Ratingred
-        weight: 20
+        weight: 80
     plex_search:
       all:
         audience_rating.gte: 0.1
@@ -621,21 +548,31 @@ overlays:
   IMDB1000:
     template:
       - name: IMDB1000
-        weight: 30
+        weight: 80
+    suppress_overlays:
+      - IMDB_Ratingred
 
   IMDB250:
     template:
       - name: IMDB250
-        weight: 40
+        weight: 80
+    suppress_overlays:
+      - IMDB1000
+      - IMDB_Ratingred
 
   IMDB100:
     template:
       - name: IMDB100
-        weight: 50
+        weight: 80
+    suppress_overlays:
+      - IMDB250
+      - IMDB1000
+      - IMDB_Ratingred
 
   audience_rating:
     template:
       name: Audience_Rating
+      weight: 80
     plex_search:
       all:
         audience_rating.gte: 0.1
@@ -644,6 +581,7 @@ overlays:
   MDB_Rating:
     template:
       - name: MDB_Rating
+        weight: 100
     plex_search:
       all:
         user_rating.gte: 0.1
@@ -652,6 +590,7 @@ overlays:
   user_rating:
     template:
       name: User_Rating
+      weight: 100
     plex_search:
       all:
         user_rating.gte: 0.1
@@ -660,7 +599,7 @@ overlays:
   RT-Crit-Rottenred:
     template:
       - name: RT-Crit-Rottenred
-        weight: 30
+        weight: 90
     plex_search:
       all:
         critic_rating.gte: 0.1
@@ -669,20 +608,26 @@ overlays:
   RT-Crit-Freshred:
     template:
       - name: RT-Crit-Freshred
-        weight: 40
+        weight: 90
     plex_search:
       all:
         critic_rating.gte: 6.1
         critic_rating.lte: 10
+    suppress_overlays:
+      - RT-Crit-Rottenred
 
   RT-CF-Rating:
     template:
       - name: RT-CF-Rating
-        weight: 50
+        weight: 90
+    suppress_overlays:
+      - RT-Crit-Freshred
+      - RT-Crit-Rottenred
 
   critic_rating:
     template:
       name: Critic_Rating
+      weight: 90
     plex_search:
       all:
         critic_rating.gte: 0.1
@@ -691,26 +636,18 @@ overlays:
   critic_rating10:
     template:
       name: Critic_Rating10
+      weight: 90
     plex_search:
       all:
         critic_rating.gte: 10
         critic_rating.lte: 10
-
-
-#  IMDB-Top-250red:
-#    template:
-#      - name: IMDbTop250
-#        weight: 50
+    suppress_overlays:
+      - Critic_Rating
 
   MC-Must-See:
     template:
       - name: Meta-Must
         weight: 45
-
-#  RT-Cert-Freshred:
-#    template:
-#      - name: RT-Cert-Fresh
-#        weight: 40
 
   Oscarredglow:
     template:
