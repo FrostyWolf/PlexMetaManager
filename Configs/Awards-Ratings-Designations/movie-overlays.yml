@@ -590,7 +590,7 @@ queues:
       horizontal_align: left
       vertical_offset: 33
       vertical_align: bottom
-    - horizontal_offset: 426
+    - horizontal_offset: 406
       horizontal_align: left
       vertical_offset: 33
       vertical_align: bottom
