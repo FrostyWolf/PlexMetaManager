@@ -1,4 +1,20 @@
 templates:
+  Award:
+    optional:
+      -overlay_level
+    default:
+      overlay: <<overlay_name>>
+    collection_level: <<overlay_level>>
+    overlay:
+      name: <<overlay_name>>
+      repo: /Awards-Ratings-Designations/images/<<overlay>>
+      group: award
+      weight: <<weight>>
+      horizontal_offset: <<horizontal_offset>>
+      horizontal_align: left
+      vertical_offset: <<vertical_offset>>
+      vertical_align: top
+
   Oscar:
     optional:
       - overlay_level
@@ -342,8 +358,11 @@ templates:
 overlays:
   Oscarredglow:
     template:
-      - name: Oscarglow
-        weight: 100
+      name: Award
+      weight: 100
+      imdb_list: https://www.imdb.com/search/title/?groups=oscar_winner
+      horizontal_offset: 5
+      vertical_offset: 5
 
   Oscarred:
     template:
