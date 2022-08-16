@@ -548,14 +548,14 @@ overlays:
   IMDB1000:
     template:
       - name: IMDB1000
-        weight: 80
+        weight: 81
     suppress_overlays:
       - IMDB_Ratingred
 
   IMDB250:
     template:
       - name: IMDB250
-        weight: 80
+        weight: 82
     suppress_overlays:
       - IMDB1000
       - IMDB_Ratingred
@@ -563,7 +563,7 @@ overlays:
   IMDB100:
     template:
       - name: IMDB100
-        weight: 80
+        weight: 83
     suppress_overlays:
       - IMDB250
       - IMDB1000
@@ -608,7 +608,7 @@ overlays:
   RT-Crit-Freshred:
     template:
       - name: RT-Crit-Freshred
-        weight: 90
+        weight: 91
     plex_search:
       all:
         critic_rating.gte: 6.1
@@ -619,7 +619,7 @@ overlays:
   RT-CF-Rating:
     template:
       - name: RT-CF-Rating
-        weight: 90
+        weight: 92
     suppress_overlays:
       - RT-Crit-Freshred
       - RT-Crit-Rottenred
@@ -636,7 +636,7 @@ overlays:
   critic_rating10:
     template:
       name: Critic_Rating10
-      weight: 90
+      weight: 91
     plex_search:
       all:
         critic_rating.gte: 10
