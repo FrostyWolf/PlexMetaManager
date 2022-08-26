@@ -160,7 +160,6 @@ templates:
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
-      weight: <<weight>>
       horizontal_offset: 2
       horizontal_align: right
       vertical_offset: 2
@@ -647,7 +646,6 @@ overlays:
   MC-Must-See:
     template:
       - name: Meta-Must
-        weight: 45
 
   Oscarredglow:
     template:
