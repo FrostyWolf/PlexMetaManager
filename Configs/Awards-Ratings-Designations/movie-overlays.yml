@@ -172,7 +172,10 @@ templates:
     default:
       overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
-    imdb_list: https://www.imdb.com/search/title/?groups=oscar_winner
+    imdb_list: 
+    - https://www.imdb.com/search/title/?groups=oscar_winner
+    - https://www.imdb.com/search/title/?groups=best_director_winner
+    - https://www.imdb.com/search/title/?release_date=<<key-1>>-01-01,<<key-1>>-12-31&groups=oscar_winner&sort=<<imdb_sort>>
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
@@ -197,6 +200,8 @@ templates:
     letterboxd_list:
     - https://letterboxd.com/tajlv/list/best-picture/
     - https://letterboxd.com/jake_ziegler/list/academy-award-winners-for-best-picture/
+    imdb_list: 
+    - https://www.imdb.com/search/title/?groups=best_picture_winner
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
@@ -266,6 +271,7 @@ templates:
     - https://letterboxd.com/marco70go/list/venice-film-festival-marcello-mastroianni/
     - https://letterboxd.com/neperfectionist/list/golden-lion-leone-doro-winners-of-venice/
     - https://letterboxd.com/moviewithus/list/venice-winners/
+    - https://letterboxd.com/mundof/list/queer-lion-venice-film-festival-2007-2022/
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
@@ -387,7 +393,9 @@ templates:
     default:
       overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
-    imdb_list: https://www.imdb.com/search/title/?groups=golden_globe_winner
+    imdb_list: 
+    - https://www.imdb.com/search/title/?groups=golden_globe_winner
+    - https://www.imdb.com/search/title/?release_date=<<key-1>>-01-01,<<key-1>>-12-31&groups=golden_globe_winner&sort=<<imdb_sort>>
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
@@ -409,6 +417,10 @@ templates:
     letterboxd_list:
     - https://letterboxd.com/gabeberk/list/golden-globe-best-motion-picture-winners/
     - https://letterboxd.com/melissaj703/list/golden-globes-best-motion-picture-winners/
+    tmdb_list:
+    - 8191011
+    - 8191022
+    - 8235497    
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
