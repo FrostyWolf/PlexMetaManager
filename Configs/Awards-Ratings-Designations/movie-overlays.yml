@@ -225,7 +225,6 @@ templates:
     - https://letterboxd.com/antoniorojo/list/cannes/
     - https://letterboxd.com/ihatejungles/list/cannes/
     - https://letterboxd.com/vinwaters/list/cannes/
-    - https://letterboxd.com/feelinglistless/list/cannes/
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
@@ -417,10 +416,6 @@ templates:
     letterboxd_list:
     - https://letterboxd.com/gabeberk/list/golden-globe-best-motion-picture-winners/
     - https://letterboxd.com/melissaj703/list/golden-globes-best-motion-picture-winners/
-    tmdb_list:
-    - 8191011
-    - 8191022
-    - 8235497    
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
@@ -503,7 +498,6 @@ templates:
     letterboxd_list:
     - https://letterboxd.com/elicronier96/list/saturn-award-for-best-science-fiction-movie/
     - https://letterboxd.com/hunterbjork/list/saturn-award-for-best-science-fiction-film/
-    - https://letterboxd.com/montyclift/list/saturn-award-winners-for-best-horror-film/
     - https://letterboxd.com/elicronier96/list/saturn-award-for-best-horror-film/
     - https://letterboxd.com/elicronier96/list/saturn-award-for-best-fantasy-film/
     - https://letterboxd.com/elicronier96/list/saturn-award-for-best-action-or-adventure/
