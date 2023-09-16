@@ -71,7 +71,7 @@ overlays:
     template: [name: standard, name: status]
 
   airing_shows:
-    variables: {key: airing, weight: 40, text: AIRING, last: 14}
+    variables: {key: airing, weight: 40, text: AIRING, last: 60}
     template: [name: standard, name: status]
 
   returning_shows:
