@@ -8,7 +8,7 @@ external_templates:
       vertical_align: top
     conditionals:
       vertical_offset:
-        default: 15
+        default: 5
         conditions:
           - vertical_align: center
             value: 0
@@ -17,7 +17,7 @@ external_templates:
           - vertical_align: bottom
             value: 30
       horizontal_offset:
-        default: 15
+        default: 5
         conditions:
           - horizontal_align: center
             value: 0
