@@ -13,7 +13,7 @@ external_templates:
           - vertical_align: center
             value: 0
           - vertical_align: top
-            value: 15
+            value: 5
           - vertical_align: bottom
             value: 30
       horizontal_offset:
@@ -22,7 +22,8 @@ external_templates:
           - horizontal_align: center
             value: 0
           - horizontal_align: [left, right]
-            value: 15
+            value: 5
+    font: fonts/Roboto-Bold.ttf
     font_size: 50
     back_color: "#00000099"
     back_width: 305
