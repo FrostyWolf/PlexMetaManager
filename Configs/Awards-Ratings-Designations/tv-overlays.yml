@@ -16,7 +16,7 @@ templates:
     default:
       overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
-    imdb_list: https://www.imdb.com/chart/toptv/
+    imdb_chart: top_shows
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
@@ -29,7 +29,7 @@ templates:
       overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     imdb_list: 
-      url: https://www.imdb.com/chart/toptv/
+      imdb_chart: top_shows
       limit: 100
     overlay:
       name: <<overlay_name>>
