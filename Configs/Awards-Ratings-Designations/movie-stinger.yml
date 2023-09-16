@@ -15,12 +15,12 @@ external_templates:
           - vertical_align: bottom
             value: 30
       horizontal_offset:
-        default: 15
+        default: 205
         conditions:
           - horizontal_align: center
             value: 0
           - horizontal_align: [left, right]
-            value: 15
+            value: 205
       pmm:
         conditions:
           - file.exists: false
