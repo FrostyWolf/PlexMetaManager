@@ -36,6 +36,7 @@ templates:
   status:
     optional:
       - last
+      - first
     conditionals:
       all:
         conditions:
@@ -50,6 +51,12 @@ templates:
           - key: airing
             last.exists: true
             value: <<last>>
+      first_days:
+        conditions:
+          - key: new
+            first.exists: true
+        filters:
+          first_episode_aired: <<first>>
     ignore_blank_results: true
     plex_search:
       any:
@@ -61,10 +68,8 @@ templates:
 overlays:
 
   new_shows:
-    variables: {key: airing, weight: 50, text: NEW, last: 14}
+    variables: {key: new, weight: 50, text: NEW, first: 90}
     template: [name: standard, name: status]
-    filters:
-    first_episode_aired: 90
 
   airing_shows:
     variables: {key: airing, weight: 40, text: AIRING, last: 14}
