@@ -29,6 +29,8 @@ external_templates:
             repo.exists: false
             value: <<overlay_name>>
     allowed_libraries: movie
+    font: fonts/Roboto-Bold.ttf
+    font_size: 50
     back_color: "#00000099"
     back_width: 105
     back_height: 105
