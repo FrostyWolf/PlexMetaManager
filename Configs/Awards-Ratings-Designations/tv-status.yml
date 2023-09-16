@@ -55,12 +55,12 @@ templates:
         conditions:
           - key: new
             first.exists: true
-        filters:
-          first_episode_aired: <<first>>
+            value: <<first>>
     ignore_blank_results: true
     plex_search:
       any:
         episode_air_date: <<last_days>>
+        first_episode_aired: <<first_days>>
     plex_all: <<all>>
     filters:
       tmdb_status: <<tmdb>>
