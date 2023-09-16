@@ -28,9 +28,8 @@ templates:
     default:
       overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
-    imdb_list: 
-      imdb_chart: top_shows
-      limit: 100
+    imdb_chart: top_shows
+    limit: 100
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
