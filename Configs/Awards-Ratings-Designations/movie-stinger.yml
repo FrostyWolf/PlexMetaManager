@@ -21,13 +21,6 @@ external_templates:
             value: 0
           - horizontal_align: [left, right]
             value: 205
-      pmm:
-        conditions:
-          - file.exists: false
-            url.exists: false
-            git.exists: false
-            repo.exists: false
-            value: <<overlay_name>>
     allowed_libraries: movie
     font: fonts/Roboto-Bold.ttf
     font_size: 50
