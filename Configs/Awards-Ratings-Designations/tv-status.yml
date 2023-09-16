@@ -4,14 +4,12 @@ external_templates:
     text_<<key>>: <<text>>
     group: status
     default:
-      horizontal_align: center
+      horizontal_align: left
       vertical_align: top
     conditionals:
       vertical_offset:
         default: 15
         conditions:
-          - vertical_align.exists: false
-            value: 330
           - vertical_align: center
             value: 0
           - vertical_align: top
