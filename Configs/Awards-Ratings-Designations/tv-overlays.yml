@@ -105,7 +105,7 @@ templates:
     default:
       overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshmovies
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshshows
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
