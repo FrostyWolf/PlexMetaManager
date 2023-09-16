@@ -10,25 +10,13 @@ templates:
       repo: /Awards-Ratings-Designations/images/<<overlay>>
       queue: Rating_Queue_Logo
       weight: <<weight>>
-  IMDB1000:                                                                     #IMDB Rating (Top 1000)
-    optional:
-      - overlay_level
-    default:
-      overlay: <<overlay_name>>
-    collection_level: <<overlay_level>>
-    imdb_list: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary&groups=top_1000
-    overlay:
-      name: <<overlay_name>>
-      repo: /Awards-Ratings-Designations/images/<<overlay>>
-      queue: Rating_Queue_Logo
-      weight: <<weight>>
   IMDB250:                                                                      #IMDB Rating Logo (Top 250)
     optional:
       - overlay_level
     default:
       overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
-    imdb_list: https://www.imdb.com/search/title/?title_type=feature,tv_movie,documentary&groups=top_250
+    imdb_list: https://www.imdb.com/chart/toptv/
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
@@ -550,19 +538,11 @@ overlays:
         audience_rating.gte: 0.1
         audience_rating.lte: 10
 
-  IMDB1000:
-    template:
-      - name: IMDB1000
-        weight: 81
-    suppress_overlays:
-      - IMDB_Ratingred
-
   IMDB250:
     template:
       - name: IMDB250
         weight: 82
     suppress_overlays:
-      - IMDB1000
       - IMDB_Ratingred
 
   IMDB100:
@@ -571,7 +551,6 @@ overlays:
         weight: 83
     suppress_overlays:
       - IMDB250
-      - IMDB1000
       - IMDB_Ratingred
 
   audience_rating:
