@@ -146,7 +146,7 @@ templates:
     default:
       overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
-    mdblist_list: https://mdblist.com/lists/frostywolf/metacritic-must-see-movies/
+    mdblist_list: https://mdblist.com/lists/plexmetamanager/metacriticmustseeshows
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
