@@ -32,8 +32,9 @@ external_templates:
     font: fonts/Roboto-Bold.ttf
     font_size: 50
     back_color: "#00000099"
-    back_width: 105
+    back_width: 255
     back_height: 105
+    final_name: STINGER
 
 overlays:
   Mediastinger:
