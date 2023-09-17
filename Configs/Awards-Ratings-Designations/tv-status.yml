@@ -4,7 +4,7 @@ external_templates:
     text_<<key>>: <<text>>
     group: status
     default:
-      horizontal_align: left
+      horizontal_align: center
       vertical_align: top
     conditionals:
       vertical_offset:
@@ -17,12 +17,12 @@ external_templates:
           - vertical_align: bottom
             value: 30
       horizontal_offset:
-        default: 5
+        default: 0
         conditions:
           - horizontal_align: center
             value: 0
           - horizontal_align: [left, right]
-            value: 5
+            value: 0
     font: fonts/Roboto-Bold.ttf
     font_size: 50
     back_color: "#00000099"

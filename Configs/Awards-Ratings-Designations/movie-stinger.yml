@@ -2,7 +2,7 @@ external_templates:
   pmm: templates
   template_variables:
     default:
-      horizontal_align: left
+      horizontal_align: center
       vertical_align: top
     conditionals:
       vertical_offset:
@@ -15,12 +15,12 @@ external_templates:
           - vertical_align: bottom
             value: 30
       horizontal_offset:
-        default: 205
+        default: 0
         conditions:
           - horizontal_align: center
             value: 0
           - horizontal_align: [left, right]
-            value: 205
+            value: 0
     allowed_libraries: movie
     font: fonts/Roboto-Bold.ttf
     font_size: 50
