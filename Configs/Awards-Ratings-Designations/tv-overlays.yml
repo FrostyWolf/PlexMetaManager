@@ -22,20 +22,6 @@ templates:
       repo: /Awards-Ratings-Designations/images/<<overlay>>
       queue: Rating_Queue_Logo
       weight: <<weight>>
-  IMDB100:                                                                      #IMDB Rating Logo (Top 100)
-    optional:
-      - overlay_level
-    default:
-      overlay: <<overlay_name>>
-    collection_level: <<overlay_level>>
-    imdb_chart: top_shows
-    limit: 100
-    overlay:
-      name: <<overlay_name>>
-      repo: /Awards-Ratings-Designations/images/<<overlay>>
-      queue: Rating_Queue_Logo
-      weight: <<weight>>
-
   Audience_Rating:                                                               #Audience Rating Text (IMDB Rating)
     optional:
       - overlay_level
@@ -197,14 +183,6 @@ overlays:
       - name: IMDB250
         weight: 82
     suppress_overlays:
-      - IMDB_Ratingred
-
-  IMDB100:
-    template:
-      - name: IMDB100
-        weight: 83
-    suppress_overlays:
-      - IMDB250
       - IMDB_Ratingred
 
   audience_rating:
