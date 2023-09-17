@@ -105,6 +105,8 @@ templates:
       overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
     mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshshows
+    Filters:
+
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
@@ -258,6 +260,7 @@ overlays:
     template:
       - name: RT-CF-Rating
         weight: 92
+    suppress_overlays:
       - RT-Crit-Freshred
       - RT-Crit-Rottenred
 
