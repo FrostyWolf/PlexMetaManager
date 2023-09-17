@@ -547,7 +547,7 @@ overlays:
         weight: 80
     plex_search:
       all:
-        audience_rating.gte: 0.1
+        audience_rating.gte: 0
         audience_rating.lte: 10
 
   IMDB1000:
@@ -580,7 +580,7 @@ overlays:
       weight: 80
     plex_search:
       all:
-        audience_rating.gte: 0.1
+        audience_rating.gte: 0
         audience_rating.lte: 10
 
   MDB_Rating:
@@ -589,7 +589,7 @@ overlays:
         weight: 100
     plex_search:
       all:
-        user_rating.gte: 0.1
+        user_rating.gte: 0
         user_rating.lte: 10
 
   user_rating:
@@ -598,7 +598,7 @@ overlays:
       weight: 100
     plex_search:
       all:
-        user_rating.gte: 0.1
+        user_rating.gte: 0
         user_rating.lte: 10
   
   RT-Crit-Rottenred:
@@ -607,7 +607,7 @@ overlays:
         weight: 90
     plex_search:
       all:
-        critic_rating.gte: 0.1
+        critic_rating.gte: 0
         critic_rating.lte: 6.0
 
   RT-Crit-Freshred:
@@ -635,7 +635,7 @@ overlays:
       weight: 90
     plex_search:
       all:
-        critic_rating.gte: 0.1
+        critic_rating.gte: 0
         critic_rating.lte: 9.9
 
   critic_rating10:
