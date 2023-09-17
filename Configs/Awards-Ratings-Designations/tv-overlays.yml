@@ -261,6 +261,7 @@ overlays:
   RT-CF-Rating:
     template:
       - name: RT-CF-Rating
+        weight: 92
     suppress_overlays:
       - RT-Crit-Freshred
       - RT-Crit-Rottenred
