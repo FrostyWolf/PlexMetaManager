@@ -104,11 +104,7 @@ templates:
     default:
       overlay: <<overlay_name>>
     collection_level: <<overlay_level>>
-    mdblist_list: https://mdblist.com/lists/plexmetamanager/certifiedfreshshows
-    plex_search:
-      all:
-        critic_rating.gte: 0
-        critic_rating.lte: 10
+    mdblist_list: https://mdblist.com/lists/frostywolf/certified-fresh-shows
     overlay:
       name: <<overlay_name>>
       repo: /Awards-Ratings-Designations/images/<<overlay>>
