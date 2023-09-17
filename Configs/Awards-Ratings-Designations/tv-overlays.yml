@@ -196,10 +196,6 @@ overlays:
     template:
       - name: IMDB250
         weight: 82
-    plex_search:
-      all:
-        audience_rating.gte: 0
-        audience_rating.lte: 10
     suppress_overlays:
       - IMDB_Ratingred
 
@@ -207,10 +203,6 @@ overlays:
     template:
       - name: IMDB100
         weight: 83
-    plex_search:
-      all:
-        audience_rating.gte: 0
-        audience_rating.lte: 10
     suppress_overlays:
       - IMDB250
       - IMDB_Ratingred
