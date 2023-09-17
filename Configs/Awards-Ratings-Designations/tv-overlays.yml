@@ -196,6 +196,10 @@ overlays:
     template:
       - name: IMDB250
         weight: 82
+    plex_search:
+      all:
+        audience_rating.gte: 0
+        audience_rating.lte: 10
     suppress_overlays:
       - IMDB_Ratingred
 
@@ -203,6 +207,10 @@ overlays:
     template:
       - name: IMDB100
         weight: 83
+    plex_search:
+      all:
+        audience_rating.gte: 0
+        audience_rating.lte: 10
     suppress_overlays:
       - IMDB250
       - IMDB_Ratingred
@@ -258,6 +266,10 @@ overlays:
     template:
       - name: RT-CF-Rating
         weight: 92
+    plex_search:
+      all:
+        critic_rating.gte: 0
+        critic_rating.lte: 10
     suppress_overlays:
       - RT-Crit-Freshred
       - RT-Crit-Rottenred
